@@ -2,7 +2,7 @@ const socket = io('http://localhost:3100/');
 
 // HuynhPVd tạo kết nối video 
 function openStream() {
-    const config = {audio : false, video : true};
+    const config = {audio : true, video : true};
     return navigator.mediaDevices.getUserMedia(config);
 }
 // HuynhPVd đưa video lên web 
